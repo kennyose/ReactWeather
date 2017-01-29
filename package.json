@@ -4,8 +4,8 @@
   "description": "format for apps",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Kennedy Oseni",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "axios": "^0.15.3",
     "express": "^4.14.0",
     "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
     "react-router": "^3.0.1"
   },
