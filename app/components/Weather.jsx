@@ -19,7 +19,6 @@ class Weather extends React.Component {
 
 	handleSearch(location) {
 		var that = this;
-		console.log(this);
 		this.setState({ 
 			isLoading: true,
 			errorMessage: undefined,
@@ -31,7 +30,8 @@ class Weather extends React.Component {
 			that.setState({
 				isLoading: false,
 				location: location,
-				temp: temp
+				temp: temp,
+				errormessage: undefined
 			});
 		}, function (e) {
 			that.setState({ 
