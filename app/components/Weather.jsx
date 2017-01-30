@@ -22,7 +22,9 @@ class Weather extends React.Component {
 		console.log(this);
 		this.setState({ 
 			isLoading: true,
-			errorMessage: undefined
+			errorMessage: undefined,
+			location: undefined,
+			temp: undefined
 		});
 
 		openWeatherMap.getTemp(location).then(function (temp) {
@@ -38,6 +40,24 @@ class Weather extends React.Component {
 			 });
 		});
 	};
+
+	componentDidMount() {
+		var location = this.props.location.query.location;
+
+		if (location && location.length > 0) {
+			this.handleSearch(location);
+			window.location.hash = '#/';
+		}
+	}
+
+	componentWillReceiveProps(newProps) {
+		var location = newProps.location.query.location;
+
+		if (location && location.length > 0) {
+			this.handleSearch(location);
+			window.location.hash = '#/';
+		}
+	}
 
 	render() {
 		var {isLoading, temp, location, errorMessage} = this.state;
