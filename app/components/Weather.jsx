@@ -70,7 +70,7 @@ class Weather extends React.Component {
 			}
 		};
 
-		function renderError () {
+		function renderError() {
 			if (typeof errorMessage === 'string') {
 				return (
 					<ErrorModal message={errorMessage}/>

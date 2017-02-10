@@ -5,7 +5,7 @@ const OPEN_WEATHER_MAP_URL = 'https://cors-anywhere.herokuapp.com/http://api.ope
 
 //2587bcbec8a9df4a3fe192c2b74410f1
 
-module.exports = {
+module.exports = {   
   getTemp: function (location) {
 		var encodedLocation = encodeURIComponent(location);
 		var requestURL = `${OPEN_WEATHER_MAP_URL}&q=${encodedLocation}`;
