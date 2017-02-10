@@ -1,7 +1,7 @@
 var axios = require('axios');
 
 
-const OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/weather?appid=2587bcbec8a9df4a3fe192c2b74410f1&units=metric';
+const OPEN_WEATHER_MAP_URL = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?appid=2587bcbec8a9df4a3fe192c2b74410f1&units=metric';
 
 //2587bcbec8a9df4a3fe192c2b74410f1
 
